@@ -6,26 +6,11 @@
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link href="built_styles.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="summercamp.css"> -->
-
+  <link rel="stylesheet" href="styleforcontent.css">
   <script src="node_modules/tw-elements/dist/js/index.min.js"></script>
 
   <title>Summer Camp</title>
-  <style>
-    .vtn {
-      background-color: rgb(245, 237, 188);
-      padding: 10px 11px;
-      border-radius: 10px;
-      
-      margin: 20px;
-      font-weight: bold;
-      
-    }
 
-    .vtn:hover {
-      background-color: #65646445;
-      scale: 1.2;
-    }
-  </style>
 </head>
 
 <body>
@@ -34,9 +19,9 @@
     style=" background-position: center center; background-color:rgb(245, 237, 188) ; background-repeat: no-repeat; background-blend-mode: multiply; padding: 100px 40px 0px; margin-bottom: 0px; margin-top: 0px; border-width: 0px; border-color: rgb(234, 233, 233); border-style: solid; background-size: cover; background-image: url(Assets/activities/Summer_Camp/backgroundimg.jpg); opacity: 1;">
     <!-- Content -->
     <div class="flex flex-row">
-      <div class="absolute top-0 p-10 flex flex-row text-lg text-white font-bold">
+      <div class="absolute top-0 left-0 p-4  lg:p-10 flex flex-row text-lg text-white font-bold">
 
-        <div class="flex flex-row" style="margin: 0vw 2vw;">
+        <div class="flex flex-row mr-4">
           <div style="margin-right: 3px;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
               <path fill-rule="evenodd"
@@ -49,7 +34,7 @@
           </div>
         </div>
 
-        <div class="flex flex-row">
+        <div id="SummerButtonBox" class="flex flex-row">
           <div style="margin-right: 3px;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
               <path
@@ -62,20 +47,17 @@
             <a href="index.html" class="link link-hover hover:text-black">Go To Home</a>
           </div>
         </div>
-        
+
       </div>
       <div class="">
-        <img src="Assets/activities/Summer_Camp/Summercampweb.png" alt="" class="hidden md:block" style="width: 450px; 
-      position: absolute;
-      top: -45px;
-      right: 175px;">
+        <img src="Assets/activities/Summer_Camp/Summercampweb.png" alt="" class="stickerImg hidden lg:block">
       </div>
     </div>
     <!-- End of navbar -->
     <div class="empty  " style="height: 23vw; content: none; ;">
 
     </div>
-    
+
 
   </div>
 
@@ -84,101 +66,388 @@
     construction worker colonies. Ten days program was scheduled in which a variety of activities had done.
   </div>
 
-  <div class="flex flex-row justify-center">
-    <a href="#SCsport"><button class="vtn">
-        Sports
-      </button></a>
-    <a href="#SCartsandcrafts"><button class="vtn">
-        Arts & Crafs
-      </button></a>
-    <a href="#SCmusic"><button class="vtn">
-        Music
-      </button></a>
-    <a href="#SCdancing"><button class="vtn">
-        Dancing
-      </button></a>
-    <a href="#SCtreeplantation"><button class="vtn">
-        Tree Plantation
-      </button></a>
-  </div>
-  <div class="flex flex-row justify-center">
-    <a href="#SCarchaeology"><button class="vtn">
-        Archaeology
-      </button></a>
-    <a href="#SClibrary"><button class="vtn">
-        Library
-      </button></a>
-    <a href="#SCcomputerclass"><button class="vtn">
-        Computer class
-      </button></a>
-    <a href="#SClanguage"><button class="vtn">
-        Language
-      </button></a>
-    <a href="#SCccl"><button class="vtn">
-        CCL
-      </button></a>
+  <div >
+    <div class="flex flex-col lg:flex-row justify-center">
+      <div class="flex flex-row justify-center">
+        <a href="#SCsport"><button class="vtn">
+            Sports
+          </button></a>
+
+        <a href="#SCmusic"><button class="vtn">
+            Music
+          </button></a>
+        <a href="#SCdancing"><button class="vtn">
+            Dancing
+          </button></a>
+
+      </div>
+      <div class="flex flex-row justify-center">
+        <a href="#SCartsandcrafts"><button class="vtn">
+            Arts & Crafs
+          </button></a>
+        <a href="#SCtreeplantation"><button class="vtn">
+            Tree Plantation
+          </button></a>
+      </div>
+    </div>
+
+    <div class="flex flex-col lg:flex-row justify-center">
+      <div class="flex flex-row justify-center">
+        <a href="#SClibrary"><button class="vtn">
+            Library
+          </button></a>
+        <a href="#SCccl"><button class="vtn">
+            CCL
+          </button></a>
+        <a href="#SClanguage"><button class="vtn">
+            Language
+          </button></a>
+      </div>
+      <div class="flex flex-row justify-center">
+        <a href="#SCarchaeology"><button class="vtn">
+            Archaeology
+          </button></a>
+
+        <a href="#SCcomputerclass"><button class="vtn">
+            Computer class
+          </button></a>
+      </div>
+    </div>
+
   </div>
 
   <!-- Sorts -->
   <div id="SCsport" class="bg-base-200">
-    <h1 class="mb-12 text-5xl font-bold text-center p-10">
+    <a href="#SummerButtonBox">
+    <div class="fixed top-0 left-0 p-1">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="text-primary font-bold w-6 h-6 scroll-smooth" viewBox="0 0 24 24" strokeWidth={1.5}
+        stroke="currentColor" className="w-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+      </svg>
+    </div>
+  </a>
+    <h1 class="text-3xl p-4 font-bold lg:text-5xl text-center ">
       Sports
-    </h1>
+    </h1>  
 
+    <div class=" flex flex-col lg:flex-row  sm:items-center Horizontalmargin">
+      <div class="boxsize">
+        <p class="text-lg lg:text-2xl p-4 lg:p-10 ">
+          Students were divided into four groups, each playing the following games - dodgeball, chess, squash, and
+          badminton. Following this, they played some interesting games - ball tunnel and Kangaroo jump.
+        </p>
+      </div>
+      <div>
+        <img src="Assets/activities/Summer_Camp/sport1.jpg" alt="" class="rounded-lg imag">
+      </div>
+    </div>
+
+    <div class=" flex flex-col lg:flex-row-reverse  sm:items-center Horizontalmargin">
+      <div class="boxsize">
+        <p class="marleft ml-0 text-lg lg:text-2xl p-4 lg:p-10 lg:m-10">
+          In the ball tunnel, players were divided into two teams and had them line up in a straight line facing the
+          same direction with their legs standing apart to form a tunnel. The player at the end of the line turns to
+          face the other way and stands with their knees bent and their head down, looking for the ball as it comes
+          through the legs.
+        </p>
+      </div>
+      <div>
+        <img src="Assets/activities/Summer_Camp/sport3.jpg" alt="" class="rounded-lg imag mx-0">
+      </div>
+    </div>
+    <div class=" flex flex-col lg:flex-row  sm:items-center Horizontalmargin">
+      <div class="boxsize">
+        <p class="text-lg lg:text-2xl p-4 lg:p-10 ">
+          In the Kangaroo jump, players were divided into two groups. Players would hop like a Kangaroo while
+          balancing
+          a ball between their knees in this race to the finish.
+        </p>
+      </div>
+      <div>
+        <img src="Assets/activities/Summer_Camp/sport2.jpg" alt="" class="rounded-lg imag mx-0">
+      </div>
+    </div>
   </div>
+
   <!-- Arts and crafts -->
   <div id="SCartsandcrafts" class="bg-base-100">
-    <h1 class="mb-12 text-5xl font-bold text-center p-10">
+    <h1 class="text-3xl p-4 font-bold lg:text-5xl text-center">
       Arts & Crafts
-    </h1>
+    </h1> 
+    <div class=" flex flex-col lg:flex-row  sm:items-center Horizontalmargin">
+      <div class="boxsize">
+        <p class="text-lg lg:text-2xl p-4 lg:p-10 ">
+          The craft session was conducted for a brief 60 minutes but covered several interesting concepts on paper
+          folding techniques to create beautiful origami products. By the end of the session, every participant was
+          able
+          to make their origami tulip flower.
+        </p>
+
+      </div>
+      <div>
+        <img src="Assets/activities/Summer_Camp/artsandcrafts2.jpg" alt="" class="rounded-lg imag mx-0">
+      </div>
+    </div>
+    <div class=" flex flex-col lg:flex-row-reverse  sm:items-center Horizontalmargin">
+      <div class="boxsize">
+        <p class="marleft ml-0 text-lg lg:text-2xl p-4 lg:p-10 lg:m-10">
+          The painting session was focused on exploring the concepts of basic artwork with mixed media. The children
+          used various mediums/materials like paint, colour paper, buttons, vegetable and used techniques like
+          vegetable
+          printing, painting, etc to create an artwork as a team By engaging the children in this group activity, they
+          were also exposed to team-building exercises and leadership skills parallelly.
+        </p>
+      </div>
+      <div>
+        <img src="Assets/activities/Summer_Camp/arts&crafts1.jpg" alt="" class="rounded-lg imag mx-0">
+      </div>
+    </div>
   </div>
+
   <!-- Music -->
   <div id="SCmusic" class="bg-base-200">
-    <h1 class="mb-12 text-5xl font-bold text-center p-10">
+    <h1 class="text-3xl p-4 font-bold lg:text-5xl text-center">
       Music
     </h1>
+    
+    <div class=" flex flex-col lg:flex-row  sm:items-center Horizontalmargin">
+      <div class="boxsize">
+        <p class="text-lg lg:text-2xl p-4 lg:p-10 ">
+          The music session was conducted by <a href="https://iitgn.ac.in/student/lifeoncampus/clubs/" target="_blank"
+            class="link">Sargam</a>, the music club at IIT Gandhinagar. The team consisted of singers Chinmayee
+          Shukla,
+          Akshat Khanna, and Praanshu Sharan with Harvansh Dandelia on the guitar. The session was widely appreciated
+          by
+          all the children with active participation that made it feel like a concert. The children were given a
+          chance
+          to try playing percussion instruments while playing a game of antakshari. The session finished off with all
+          children singing their favourite songs with the band.
+        </p>
+      </div>
+      <div>
+        <img src="Assets/activities/Summer_Camp/music1.jpg" alt="" class="rounded-lg imag mx-0">
+      </div>
+    </div>
   </div>
+
   <!-- Dancing -->
   <div id="SCdancing" class="bg-base-100">
-    <h1 class="mb-12 text-5xl font-bold text-center p-10">
+    <h1 class="text-3xl p-4 font-bold lg:text-5xl text-center">
       Dancing
     </h1>
+    <div class=" flex flex-col lg:flex-row  sm:items-center Horizontalmargin">
+      <div class="boxsize">
+        <p class="text-lg lg:text-2xl p-4 lg:p-10 ">
+          The dance session was by far the most exciting one, with several children, especially girls, who were highly
+          enthusiastic about participating. It was conducted in five sessions. In the first class, students were
+          introduced to basic hook steps of Bollywood songs for all age groups.
+        </p>
+      </div>
+      <div>
+        <img src="Assets/activities/Summer_Camp/danc1.jpg" alt="" class="rounded-lg imag mx-0">
+      </div>
+    </div>
+    <div class=" flex flex-col lg:flex-row-reverse  sm:items-center Horizontalmargin">
+      <div class="boxsize">
+        <p class="marleft ml-0 text-lg lg:text-2xl p-4 lg:p-10 lg:m-10">
+          In the second class, girls were introduced to a semi-classical form of dance along with their Bollywood
+          dance.
+          Several kids were excited, actively participated in rehearsals, and were always ready to learn new steps and
+          choreography. On the final day of the summer camp, the children performed a fabulous dance through the
+          learnings from the sessions.
+        </p>
+      </div>
+      <div>
+        <img src="Assets/activities/Summer_Camp/danc2.jpg" alt="" class="rounded-lg imag mx-0">
+      </div>
+    </div>
   </div>
+
   <!-- Tree Plantation -->
   <div id="SCtreeplantation" class="bg-base-200">
-    <h1 class="mb-12 text-5xl font-bold text-center p-10">
-      Tree Plantation
+    <h1 class="text-3xl p-4 font-bold lg:text-5xl text-center">
+      Tree Plantaion
     </h1>
+    <div class=" flex flex-col lg:flex-row  sm:items-center Horizontalmargin">
+      <div class="boxsize">
+        <p class="text-lg lg:text-2xl p-4 lg:p-10 ">
+          In honour of World Environment Day, the students at Nyasa Summer Camp were engaged in a tree plantation
+          drive
+          on the campus. The children were grouped and were given a sapling to plant. An informative and interactive
+          session followed the plantation drive by Prof. CN Pandey, a faculty member from the Earth Sciences
+          department.
+          Prof. Pandey spoke to the students about the local flora and fauna, the impending threat to our ecosystem,
+          and
+          the possible ways in which it can be prevented. The enthusiastic children asked questions and sought more
+          explanations on many topics.
+        </p>
+      </div>
+      <div>
+        <img src="Assets/activities/Summer_Camp/treeplantation2.jpg" alt="" class="rounded-lg imag mx-0">
+      </div>
+    </div>
   </div>
   <!-- Archaeology -->
   <div id="SCarchaeology" class="bg-base-100">
-    <h1 class="mb-12 text-5xl font-bold text-center p-10">
+    <h1 class="text-3xl p-4 font-bold lg:text-5xl text-center">
       Archaeology
     </h1>
+    <div class=" flex flex-col lg:flex-row  sm:items-center Horizontalmargin">
+      <div class="boxsize">
+        <p class="text-lg lg:text-2xl p-4 lg:p-10 ">
+          This day-long session gave the children and the volunteers a glimpse of the life of an archaeologist through
+          sandbox mock excavations.
+
+          Further, the session also gave them an idea of how artefacts from the excavation sites are assembled and
+          analysed through a simple exercise of pot painting, breaking, and joining. The participants were first shown
+          pictures from different ancient cultures. They were then asked to recreate the same design (for those
+          inclined
+          to paint) or paint anything that they wanted to.
+
+        </p>
+      </div>
+      <div>
+        <img src="Assets/activities/Summer_Camp/artchon2.jpg" alt="" class="rounded-lg imag mx-0">
+      </div>
+    </div>
+    <div class=" flex flex-col lg:flex-row-reverse  sm:items-center Horizontalmargin">
+      <div class="boxsize">
+        <p class="marleft ml-0 text-lg lg:text-2xl p-4 lg:p-10 lg:m-10">
+          After the painting, the pots were deliberately broken to
+          resemble findings from the excavation fields. Finally, the participants were tasked with rejoining the
+          broken
+          pots from another.
+        </p>
+      </div>
+      <div>
+        <img src="Assets/activities/Summer_Camp/artchon1.jpg" alt="" class="rounded-lg imag mx-0">
+      </div>
+    </div>
   </div>
   <!-- Library -->
   <div id="SClibrary" class="bg-base-200">
-    <h1 class="mb-12 text-5xl font-bold text-center p-10">
-      Library
+    <h1 class="text-3xl p-4 font-bold lg:text-5xl text-center">
+     Library
     </h1>
+    <div class=" flex flex-col lg:flex-row  sm:items-center Horizontalmargin">
+      <div class="boxsize">
+        <p class="text-lg lg:text-2xl p-4 lg:p-10 ">
+          The children were taken on a tour of the campus to visit the Library in batches of four. After a brief tour
+          of
+          the Library, the kids were asked to pick up a book they found interesting from the
+          Children Collection. Many already had a specific genre in mind, like horror or botany, and wanted to pick
+          books on the same. Others browsed through the collection and picked what caught their eyes, which were
+          mainly
+          the colourfully illustrated ones.
+
+        </p>
+      </div>
+      <div>
+        <img src="Assets/activities/Summer_Camp/library1.jpg" alt="" class="rounded-lg imag mx-0">
+      </div>
+    </div>
+    <div class=" flex flex-col lg:flex-row-reverse  sm:items-center Horizontalmargin">
+      <div class="boxsize">
+        <p class="marleft ml-0 text-lg lg:text-2xl p-4 lg:p-10 lg:m-10">
+          Once they finished
+          flipping through those, many asked for books in Hindi or Gujarati. The Hindi collection was introduced to
+          the
+          next, and the excited crowd picked up books of their choices. They sat on the sofas in the lobby area and
+          kept
+          reading, till it was time to go.
+        </p>
+      </div>
+      <div>
+        <img src="Assets/activities/Summer_Camp/library2.jpg" alt="" class="rounded-lg imag mx-0">
+      </div>
+    </div>
   </div>
   <!-- Computer class -->
   <div id="SCcomputerclass" class="bg-base-100">
-    <h1 class="mb-12 text-5xl font-bold text-center p-10">
-      Computer class
+    <h1 class="text-3xl p-4 font-bold lg:text-5xl text-center">
+      Computer Class
     </h1>
+    <div class=" flex flex-col lg:flex-row  sm:items-center Horizontalmargin">
+      <div class="boxsize">
+        <p class="text-lg lg:text-2xl p-4 lg:p-10 ">
+          The computer session was conducted in four batches and in three steps:
+        <div class="px-10">
+          <ol>1) Introduction to hardware, software, input device, output device, storage device, and different parts
+            of
+            the
+            computer.</ol>
+          <ol> 2) A guide to switching on and off the computer.</ol>
+          <ol> 3) Basic introduction about paint and how to use it for making colourful drawings</ol>
+        </div>
+
+
+
+
+        </p>
+      </div>
+      <div>
+        <img src="Assets/activities/Summer_Camp/comclass1.jpg" alt="" class="rounded-lg imag mx-0">
+      </div>
+    </div>
   </div>
   <!-- Language -->
   <div id="SClanguage" class="bg-base-200">
-    <h1 class="mb-12 text-5xl font-bold text-center p-10">
+    <h1 class="text-3xl p-4 font-bold lg:text-5xl text-center">
       Language
     </h1>
+    <div class=" flex flex-col lg:flex-row  sm:items-center Horizontalmargin">
+      <div class="boxsize">
+        <p class="text-lg lg:text-2xl p-4 lg:p-10 ">
+          The children were given a formal introduction to the English language and were taught basic phrases that
+          would
+          be useful to them within the campus as well as in their daily lives.
+        <div class="px-10 liststyle">
+          <li>Greeting a person - “Hi” “Hello”</li>
+          <li>Responding - “Thank you” “Welcome”</li>
+          <li>Asking questions - “May I..?”</li>
+          <li>Answering - “I like..?”</li>
+        </div>
+
+
+
+
+
+        </p>
+      </div>
+      <div>
+        <img src="Assets/activities/Summer_Camp/language1.jpg" alt="" class="rounded-lg imag mx-0">
+      </div>
+    </div>
   </div>
+
   <!--  CCL -->
-  <div id="SCccl" class="bg-base-100">
-    <h1 class="mb-12 text-5xl font-bold text-center p-10">
+  <div id="SCccl" class="bg-base-100 mb-4">
+    <h1 class="text-3xl p-4 font-bold lg:text-5xl text-center">
       CCL
     </h1>
+    <div class=" flex flex-col lg:flex-row  sm:items-center Horizontalmargin">
+      <div class="boxsize">
+        <p class="text-lg lg:text-2xl p-4 lg:p-10 ">
+          The sessions conducted by the centre for creative learning <a href="https://ccl.iitgn.ac.in/" target="_blank"
+            class="link">(CCL)</a> were by far the most exciting ones for the children
+          and volunteers alike. The team introduced science and math topics through fun little activities and
+          instruments such as:
+        <div class="px-10">
+          <li>Straw flute - To understand the generation and movement of sound by constructing a flute or whistle with
+            straw.</li>
+          <li>Cartesian diver- A DIY lie detector that works on the gas laws and the relation between pressure and
+            volume.</li>
+          <li> Graduation cap - Crafty and recycled activity to make origami caps from newspapers.</li>
+          <li>Machine syringe - A fun way to demonstrate machines.</li>
+          <li>Paper helicopter - An introduction to air resistance and torque with a fun paper toy.</li>
+          <li>Straw Spiner - To demonstrate Newton's laws of motion with a spinner.</li>
+        </div>
+        </p>
+      </div>
+      <div>
+        <img src="Assets/activities/Summer_Camp/ccl.jpg" alt="" class="rounded-lg imag mx-0">
+      </div>
+    </div>
   </div>
 
 
