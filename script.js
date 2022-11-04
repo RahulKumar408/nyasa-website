@@ -1,6 +1,8 @@
-var typed = new Typed(".typing", {
-    strings: ["", "Summer Camp", "Sanjeevani Medical Camp", "Cloth Distribution","Fruits Distribution", "Sweet Distribution"],
-    typeSpeed: 100,
-    BackSpeed: 60,
-    loop: true
-    })
+const activePage = window.location.pathname;
+// console.log(activePage)
+const navLinks = document.querySelectorAll('nav a').forEach(link =>{
+    // console.log(link.hre);
+    if(link.href.includes(`${activePage}`)){
+        link.classList.add('activePage');
+    }
+})

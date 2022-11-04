@@ -3,12 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="" type="x-icon" href="Assets/Nyasa_logo.png">
+  <link rel="shortcut icon" href="https://rsms.me/inter/inter.css">
   <link href="built_styles.css" rel="stylesheet">
+  <!-- Adding fabicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    .activePage{
+      color: black;
+      font-weight: bold;
+    }
+  </style>
+  
 
   <script src="node_modules/tw-elements/dist/js/index.min.js"></script>
 
-  <title>Nyasa</title>
+
+  <title>Nyasa </title>
 </head>
 
 <body>
@@ -17,33 +31,33 @@
     <div class="px-2 mx-2 navbar-start">
       <div class="text-lg font-bold w-7">
         <img src="Assets/Nyasa_logo.png" style="width: 80px;">
-      </div> 
+      </div>
     </div>
     <div class="hidden px-2 mx-2 navbar-center lg:flex">
       <div class="flex items-stretch">
-        <ul class="menu menu-horizontal">
-          <li>
-            <a href="index.html" class="ghost-btn rounded-lg">Home</a>
+        <nav class="menu menu-horizontal">
+          <li >
+            <a href="/index.html" class="ghost-btn rounded-lg">Home</a>
           </li>
           <li>
-            <a href="activities.html" class="ghost-btn rounded-lg">Activities</a>
+            <a href="/activities.html" class="ghost-btn rounded-lg">Activities</a>
           </li>
           <li>
-            <a href="news.html" class="ghost-btn rounded-lg">News</a>
-          </li>
-          <!-- <li>
-            <a href="education.html" class="ghost-btn rounded-lg">Education</a>
-          </li> -->
-          <li>
-            <a href="contribute.html" class="ghost-btn rounded-lg">Contribute</a>
+            <a href="/news.html" class="ghost-btn rounded-lg">News</a>
           </li>
           <!-- <li>
-            <a href="blog.html" class="ghost-btn rounded-lg">Blog</a>
+            <a href="/education.html" class="ghost-btn rounded-lg">Education</a>
           </li> -->
           <li>
-            <a href="team.html" class="ghost-btn rounded-lg">Team</a>
+            <a href="/contribute.html" class="ghost-btn rounded-lg">Contribute</a>
           </li>
-        </ul>
+          <!-- <li>
+            <a href="/blog.html" class="ghost-btn rounded-lg">Blog</a>
+          </li> -->
+          <li>
+            <a href="/team.html" class="ghost-btn rounded-lg">Team</a>
+          </li>
+        </nav>
       </div>
     </div>
     <div class="navbar-end">
@@ -56,26 +70,28 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </div>
-        <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="activities.html">Activities</a>
-          </li>
-          <li>
-            <a href="news.html">News</a>
-          </li>
-          <li>
-            <a href="contribute.html">Contribute</a>
-          </li>
-          <li>
-            <a href="blog.html">Blog</a>
-          </li>
-          <li>
-            <a href="team.html">Team</a>
-          </li>
-        </ul>
+        <nav>
+          <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
+            <li class="active">
+              <a href="/index.html">Home</a>
+            </li>
+            <li class="nav">
+              <a href="/activities.html">Activities</a>
+            </li>
+            <li class="nav">
+              <a href="/news.html">News</a>
+            </li>
+            <li class="nav">
+              <a href="/contribute.html">Contribute</a>
+            </li>
+            <li class="nav">
+              <a href="/blog.html">Blog</a>
+            </li>
+            <li class="nav">
+              <a href="/team.html">Team</a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <!-- <button class="btn btn-square btn-ghost">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">             
@@ -364,8 +380,9 @@
       <p>Copyright © 2022 - Nyasa, IIT Gandhinagar</p>
     </div>
   </footer>
+  <!-- js file -->
+  <script src="script.js"></script>
 
-  
 </body>
 
 </html>
