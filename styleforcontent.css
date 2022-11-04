@@ -1,8 +1,12 @@
 .sajstickerImg{
   width: 400px; 
   position: absolute;
-  top: -1vw;
+  top: -3vw;
   right: 5vw;
+}
+
+.activityImg{
+  width: 418px;
 }
 
 .vtn {
@@ -67,7 +71,7 @@
   .sajstickerImg{
     width: 300px; 
     position: absolute;
-    top: -1vw;
+    top: -3vw;
     right: 5vw;
   }
 }
