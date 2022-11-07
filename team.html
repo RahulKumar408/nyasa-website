@@ -23,6 +23,27 @@
       color: black;
       font-weight: bold;
     }
+    
+    @media screen and (max-width: 800px){
+      .scrollBag{
+        margin-top: 10px;
+        width: 100%;
+        height: 50vh;
+    }
+  }
+    
+    @media screen and (max-width: 480px){
+      .scrollBag{
+        margin-top: 10px;
+        width: 80%;
+    }
+    .bgcolor{
+      background-color: white;
+    }
+    .bgcolormt{
+      margin-left: 82px;
+    }
+  }
   </style>
 
   <title>Nyasa Team</title>
@@ -30,7 +51,7 @@
 
 <body>
   <!-- navbar -->
-  <div class="navbar mb-2 fixed w-full z-10 top-0 border-b bg-base-100 text-base-content ">
+  <div class=" navbar mb-2 fixed w-full z-10 top-0 border-b bg-base-100 text-base-content ">
     <div class="px-2 mx-2 navbar-start">
       <div class="text-lg font-bold w-7">
         <img src="Assets/Nyasa_logo.png" style="width: 80px;">
@@ -105,7 +126,7 @@
     <!-- End of Dropdown Navbar -->
   </div>
   <!-- hero -->
-  <div class="hero min-h-screen bg-base-100">
+  <div class="bgcolormt bgcolor hero min-h-screen bg-base-100">
     <div class="flex-col hero-content lg:flex-row-reverse">
       <img src="Assets/team.png" class="w-5/6 lg:w-3/5 mt-12 lg:mt-16">
       <div class="px-8 lg:px-0 lg:mr-16">
@@ -127,7 +148,7 @@
 
 
   <!-- current core members -->
-  <div class="hero bg-base-200 py-10 lg:py-16">
+  <div class=" bgcolormt hero bgcolor bg-base-200 py-10 lg:py-16 w-full">
     <div class="flex-col hero-content">
       <h1 class="mb-8 text-3xl lg:text-5xl font-bold">
         Current Team
@@ -234,7 +255,7 @@
   </div>
 
   <!-- Current Organizing member -->
-  <div class="hero bg-base-200">
+  <!-- <div class="hero bg-base-200">
     <div class="flex-col hero-content">
      
       <div class="flex lg:flex-row flex-col flex-wrap gap-8">
@@ -382,7 +403,7 @@
           </div>
         </div>
 
-        <!-- <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="items-center w-36 rounded-full">
@@ -403,7 +424,7 @@
               </a>
             </div>
           </div>
-        </div> -->
+        </div>
 
         <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
           <figure class="px-10 pt-10">
@@ -433,16 +454,16 @@
       </div>
     </div>
   </div>
-  </div>
+  </div> -->
 
   <!-- prev cores -->
-  <div class="hero bg-base-100 lg:py-16 mb-4">
+  <div class="hero bgcolor bg-base-100 lg:py-16 mb-4 w-full">
     <div class="flex-col hero-content">
       <h1 class="mb-0 lg:mb-8  text-3xl text-center lg:text-5xl font-bold " style="margin-top: 20px;">
         Previous Core Team Members
       </h1>
       <div class="scrollBag bg-base-100">
-        <div class="card shadow-xl rounded-xl overflow-x-auto lg:w-full md:w-full">
+        <div class="card shadow-xl rounded-xl overflow-x-auto ">
           <table class="table table-zebra">
             <!-- head -->
             <thead>
@@ -565,13 +586,13 @@
               </tr>
               <tr>
                 <td>Anukesh K A</span></td>
-                <td>____</span></td>
-                <td>Mechanical</span></td>
+                <td>2022</span></td>
+                <td>Earth Science</span></td>
               </tr>
               <tr>
                 <td>Dewanshi</span></td>
-                <td>____</span></td>
-                <td>_____</span></td>
+                <td>2022</span></td>
+                <td>Physics</span></td>
               </tr>
               <tr>
                 <td>Snehal Gohad</span></td>
@@ -586,14 +607,16 @@
     </div>
   </div>
 
+
+
   <!-- prev oragniser -->
-  <div class="hero bg-base-300 lg:py-16">
+  <div class=" bgcolor hero bg-base-300 lg:py-16 mb-4 w-full">
     <div class="flex-col hero-content">
-      <h1 class="mb-0 lg:mb-8 text-3xl text-center lg:text-5xl font-bold " style="margin-top: 20px;">
-        Previous Organizing Team Members
+      <h1 class="mb-0 lg:mb-8  text-3xl text-center lg:text-5xl font-bold " style="margin-top: 20px;">
+        Previous Organizing Members
       </h1>
       <div class="scrollBag bg-base-100">
-        <div class="card shadow-xl rounded-xl overflow-x-auto lg:w-full md:w-full">
+        <div class="card shadow-xl rounded-xl overflow-x-auto ">
           <table class="table table-zebra">
             <!-- head -->
             <thead>
@@ -602,43 +625,77 @@
                 <th>Class</th>
                 <th>Department</th>
               </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Prasanth P Nair</span></td>
-                <td>____</span></td>
-                <td>Mechanical</span></td>
-              </tr>
-              <tr>
-                <td class="tg-26kj"><span style="font-weight:inherit;font-style:inherit">Ankita Yadav</span></td>
-                <td class="tg-26kj"><span style="font-weight:inherit;font-style:inherit">____</span></td>
-                <td>____</span></td>
-              </tr>
-              <tr>
-                <td>Chris Francis</span></td>
-                <td>2022</span></td>
-                <td>Computer Science</span></td>
-              </tr>
-              <tr>
-                <td>Krishna Thakkar</span></td>
-                <td>__</span></td>
-                <td>__</span></td>
-              </tr>
-              <tr>
-                <td>Tanurima Shau</span></td>
-                <td>__</span></td>
-                <td>___ </span></td>
-              </tr>
-            </tbody>
+              <tbody>
+                <tr>
+                  <td>Prasanth P Nair</span></td>
+                  <td>____</span></td>
+                  <td>Mechanical</span></td>
+                </tr>
+                <tr>
+                  <td class="tg-26kj"><span style="font-weight:inherit;font-style:inherit">Ankita Yadav</span></td>
+                  <td class="tg-26kj"><span style="font-weight:inherit;font-style:inherit">____</span></td>
+                  <td>____</span></td>
+                </tr>
+                <tr>
+                  <td>Chris Francis</span></td>
+                  <td>2022</span></td>
+                  <td>Computer Science</span></td>
+                </tr>
+                <tr>
+                  <td>Krishna Thakkar</span></td>
+                  <td>__</span></td>
+                  <td>__</span></td>
+                </tr>
+                <tr>
+                  <td>Tanurima Shau</span></td>
+                  <td>__</span></td>
+                  <td>___ </span></td>
+                </tr>
+                <tr>
+                  <td>Aditi Satish</span></td>
+                  <td>__</span></td>
+                  <td>___ </span></td>
+                </tr>
+                
+                <tr>
+                  <td>Narsiram Gurjar</span></td>
+                  <td>__</span></td>
+                  <td>___ </span></td>
+                </tr>
+                <tr>
+                  <td>Rajdepp Singh</span></td>
+                  <td>__</span></td>
+                  <td>___ </span></td>
+                </tr>
+                <tr>
+                  <td>Shashwat Srivastava</span></td>
+                  <td>__</span></td>
+                  <td>___ </span></td>
+                </tr>
+                <tr>
+                  <td>Siddhi Surawar</span></td>
+                  <td>__</span></td>
+                  <td>___ </span></td>
+                </tr>
+                <tr>
+                  <td>Shashwat Srivastava</span></td>
+                  <td>__</span></td>
+                  <td>___ </span></td>
+                </tr>
+              </tbody>
+            </thead> 
+            
           </table>
         </div>
       </div>
+
     </div>
   </div>
+  
 
 
   <!-- footer -->
-  <footer class="p-10 footer bg-neutral text-neutral-content footer-center">
+  <footer class="bgcolormt bgcolor p-10 footer bg-neutral text-neutral-content footer-center">
     <div class="grid grid-flow-col gap-4">
       <a href="activities.html" class="link link-hover">Activities</a>
       <a href="news.html" class="link link-hover">News</a>
