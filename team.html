@@ -27,22 +27,24 @@
     @media screen and (max-width: 800px){
       .scrollBag{
         margin-top: 10px;
-        width: 100%;
+        width: 80%;
         height: 50vh;
     }
   }
     
-    @media screen and (max-width: 480px){
+    /* @media screen and (max-width: 485px){
       .scrollBag{
         margin-top: 10px;
         width: 80%;
     }
-    .bgcolor{
-      background-color: white;
+  } */
+    @media screen and (max-width: 485px){
+      .scrollBag{
+        margin:0px;
+        width: 330px;
+        padding: 0px;
     }
-    .bgcolormt{
-      margin-left: 82px;
-    }
+    
   }
   </style>
 
@@ -51,7 +53,7 @@
 
 <body>
   <!-- navbar -->
-  <div class=" navbar mb-2 fixed w-full z-10 top-0 border-b bg-base-100 text-base-content ">
+  <div class="navbar mb-2 fixed w-full z-10 top-0 border-b bg-base-100 text-base-content ">
     <div class="px-2 mx-2 navbar-start">
       <div class="text-lg font-bold w-7">
         <img src="Assets/Nyasa_logo.png" style="width: 80px;">
@@ -108,9 +110,9 @@
             <li class="nav">
               <a href="contribute.html">Contribute</a>
             </li>
-            <li class="nav">
+            <!-- <li class="nav">
               <a href="blog.html">Blog</a>
-            </li>
+            </li> -->
             <li class="nav">
               <a href="team.html">Team</a>
             </li>
@@ -125,6 +127,7 @@
     </div>
     <!-- End of Dropdown Navbar -->
   </div>
+  
   <!-- hero -->
   <div class="bgcolormt bgcolor hero min-h-screen bg-base-100">
     <div class="flex-col hero-content lg:flex-row-reverse">
@@ -255,34 +258,10 @@
   </div>
 
   <!-- Current Organizing member -->
-  <!-- <div class="hero bg-base-200">
+  <div class="hero bg-base-200">
     <div class="flex-col hero-content">
      
       <div class="flex lg:flex-row flex-col flex-wrap gap-8">
-
-        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
-          <figure class="px-10 pt-10">
-            <div class="avatar">
-              <div class="items-center w-36 rounded-full">
-                <img src="Assets/team/snehal_gohad.jpg" />
-              </div>
-            </div>
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Snehal Gohad</h2>
-            <p>Organizing Team Member</p>
-            <div class="card-actions">
-              <a href="mailto:snehal.gohad@iitgn.ac.in" class="btn btn-circle btn-ghost">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
-                </svg>
-              </a>
-              
-            </div>
-          </div>
-        </div>
 
         <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
           <figure class="px-10 pt-10">
@@ -295,16 +274,48 @@
           <div class="card-body items-center text-center">
             <h2 class="card-title">Aditi Satish</h2>
             <p>Organizing Team Member</p>
-            <div class="card-actions">
-              <a href="mailto:aditisatish@iitgn.ac.in" class="btn btn-circle btn-ghost">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
-                </svg>
-              </a>
-              
+          </div>
+        </div>
+
+        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="Assets/team/Akash_Unnikrishnan.jpg" />
+              </div>
             </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Akash Unnikrishnan</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+
+        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="Assets/team/Harshit_Chauhan.jpg" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Harshit Chauhan</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+
+        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="Assets/team/Insha_Mansuri.jpg" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Insha Mansuri</h2>
+            <p>Organizing Team Member</p>
           </div>
         </div>
 
@@ -319,16 +330,6 @@
           <div class="card-body items-center text-center">
             <h2 class="card-title">Narsiram Gurjar</h2>
             <p>Organizing Team Member</p>
-            <div class="card-actions">
-              <a href="mailto:narsiram.gurjar@iitgn.ac.in" class="btn btn-circle btn-ghost">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
-                </svg>
-              </a>
-              
-            </div>
           </div>
         </div>
 
@@ -336,23 +337,41 @@
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="items-center w-36 rounded-full">
-                <img src="Assets/team/rajdeep_singh.JPG" />
+                <img src="Assets/team/PRERNA_CHANDAK.jpg" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Prerna Chandak</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+
+        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="Assets/team/Rahul_Kumar2.jpg" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Rahul Kumar</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+
+        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="Assets/team/Rajdeep_Singh.jfif" />
               </div>
             </div>
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">Rajdeep Singh</h2>
             <p>Organizing Team Member</p>
-            <div class="card-actions">
-              <a href="mailto:devra_rajdeep@iitgn.ac.in" class="btn btn-circle btn-ghost">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
-                </svg>
-              </a>
-              
-            </div>
           </div>
         </div>
 
@@ -367,16 +386,6 @@
           <div class="card-body items-center text-center">
             <h2 class="card-title">Shashwat Srivastava</h2>
             <p>Organizing Team Member</p>
-            <div class="card-actions">
-              <a href="mailto:shashwatsrivastava@iitgn.ac.in" class="btn btn-circle btn-ghost">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
-                </svg>
-              </a>
-              
-            </div>
           </div>
         </div>
 
@@ -391,15 +400,6 @@
           <div class="card-body items-center text-center">
             <h2 class="card-title">Siddhi Surawar</h2>
             <p>Organizing Team Member</p>
-            <div class="card-actions">
-              <a href="mailto:siddhi.pravin@iitgn.ac.in" class="btn btn-circle btn-ghost">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
-                </svg>
-              </a>
-            </div>
           </div>
         </div>
 
@@ -407,57 +407,85 @@
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="items-center w-36 rounded-full">
-                <img src="Assets/team/Rahul_Kumar.jpg" />
+                <img src="Assets/team/snehal_gohad.jpg" />
               </div>
             </div>
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title">Rahul Kumar</h2>
-            <p>Technical Team Member</p>
-            <div class="card-actions">
-              <a href="mailto:kumar.rahul@iign.ac.in" class="btn btn-circle btn-ghost">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
-          <figure class="px-10 pt-10">
-            <div class="avatar">
-              <div class="items-center w-36 rounded-full">
-                <img src="Assets/team/siddhi_surawar.jpg" />
-              </div>
-            </div>
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Siddhi Surawar</h2>
+            <h2 class="card-title">Snehal Gohad</h2>
             <p>Organizing Team Member</p>
-            <div class="card-actions">
-              <a href="mailto:siddhi.pravin@iitgn.ac.in" class="btn btn-circle btn-ghost">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
-                </svg>
-              </a>
-            </div>
           </div>
         </div>
+
+        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="Assets/team/Sonu_Meena.jpg" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Sonu Meena</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+
+        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="Assets/team/Trushika_Parmar.jpg" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Trushika Parmar</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+
+        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="Assets/team/Vaishnavi_Khanapurkar.jpg" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Vaishnavi Khanapurkar</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+
+        <div class="card w-72 bg-base-100 shadow-xl grayscale hover:grayscale-0">
+          <figure class="px-10 pt-10">
+            <div class="avatar">
+              <div class="items-center w-36 rounded-full">
+                <img src="Assets/team/Vishal_Ghoniya.jpg" />
+              </div>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Vishal Ghoniya</h2>
+            <p>Organizing Team Member</p>
+          </div>
+        </div>
+
+        
+
+        
 
 
 
       </div>
     </div>
   </div>
-  </div> -->
+  </div>
 
   <!-- prev cores -->
-  <div class="hero bgcolor bg-base-100 lg:py-16 mb-4 w-full">
+  <div class="hero bgcolor bg-base-100 lg:py-16 w-full">
     <div class="flex-col hero-content">
       <h1 class="mb-0 lg:mb-8  text-3xl text-center lg:text-5xl font-bold " style="margin-top: 20px;">
         Previous Core Team Members
@@ -475,34 +503,26 @@
             </thead>
             <tbody>
               <tr>
+                <td>Aishwarya Malve</span></td>
+                <td>2022</span></td>
+                <td>Civil</span></td>
+              </tr>
+              <tr>
+                <td class="tg-26kj"><span style="font-weight:inherit;font-style:inherit">Ajay Meena</span></td>
+                <td class="tg-26kj"><span style="font-weight:inherit;font-style:inherit">2021</span></td>
+                <td>Electrical</span></td>
+              </tr>
+              <tr>
                 <td>Akash Keshav Singh</span></td>
                 <td>2015</span></td>
                 <td>Mechanical</span></td>
               </tr>
+              
+              
               <tr>
-                <td class="tg-26kj"><span style="font-weight:inherit;font-style:inherit">Kushal Salecha</span></td>
-                <td class="tg-26kj"><span style="font-weight:inherit;font-style:inherit">2016</span></td>
-                <td>Electrical</span></td>
-              </tr>
-              <tr>
-                <td>Prerna Singh</span></td>
-                <td>2017</span></td>
-                <td>Civil</span></td>
-              </tr>
-              <tr>
-                <td>Zainab Patel</span></td>
-                <td>2018</span></td>
-                <td>Material Science</span></td>
-              </tr>
-              <tr>
-                <td>Vasudev Gohil</span></td>
-                <td>2018</span></td>
-                <td>Electrical</span></td>
-              </tr>
-              <tr>
-                <td>Varun Aggarwal</span></td>
-                <td>2018</span></td>
-                <td>Electrical</span></td>
+                <td>Anukesh K A</span></td>
+                <td>2022</span></td>
+                <td>Earth Science</span></td>
               </tr>
               <tr>
                 <td>Anusha Gupta</span></td>
@@ -510,28 +530,38 @@
                 <td>Civil</span></td>
               </tr>
               <tr>
-                <td>Mandelem Manikanta</span></td>
-                <td>2019</span></td>
-                <td>Electrical</span></td>
-              </tr>
-              <tr>
-                <td>Siddhant Gulecha</span></td>
-                <td>2019</span></td>
-                <td>Civil</span></td>
-              </tr>
-              <tr>
-                <td>Saksham Singal</span></td>
-                <td>2019</span></td>
-                <td>Mechanical</span></td>
-              </tr>
-              <tr>
                 <td>C R Greeshma</span></td>
                 <td>2020</span></td>
                 <td>Material Science</span></td>
               </tr>
               <tr>
+                <td>Dewanshi</span></td>
+                <td>2022</span></td>
+                <td>Physics</span></td>
+              </tr>    
+              <tr>
+                <td>Krishna</span></td>
+                <td>2022</span></td>
+                <td>Bioengineering</span></td>
+              </tr>
+              <tr>
+                <td> Kushal Salecha</span></td>
+                <td>2016</span></td>
+                <td>Electrical</span></td>
+              </tr>
+              <tr>
+                <td>Mandelem Manikanta</span></td>
+                <td>2019</span></td>
+                <td>Electrical</span></td>
+              </tr>
+              <tr>
                 <td>Mayank Kumar</span></td>
                 <td>2020</span></td>
+                <td>Civil</span></td>
+              </tr>
+              <tr>
+                <td>Prerna Singh</span></td>
+                <td>2017</span></td>
                 <td>Civil</span></td>
               </tr>
               <tr>
@@ -540,18 +570,23 @@
                 <td>Material Science</span></td>
               </tr>
               <tr>
-                <td>Tanisha Aggrawal</span></td>
-                <td>2020</span></td>
-                <td>Material Science</span></td>
-              </tr>
-              <tr>
-                <td>Ajay Meena</span></td>
-                <td>2021</span></td>
-                <td>Electrical</span></td>
+                <td>Saksham Singal</span></td>
+                <td>2019</span></td>
+                <td>Mechanical</span></td>
               </tr>
               <tr>
                 <td>Shubham Baheti</span></td>
                 <td>2021</span></td>
+                <td>Civil</span></td>
+              </tr>
+              <tr>
+                <td>Siddhant Gulecha</span></td>
+                <td>2019</span></td>
+                <td>Civil</span></td>
+              </tr>
+              <tr>
+                <td>Snehal Gohad</span></td>
+                <td>2023</span></td>
                 <td>Civil</span></td>
               </tr>
               <tr>
@@ -560,19 +595,14 @@
                 <td>Material Science</span></td>
               </tr>
               <tr>
+                <td>Tanisha Aggrawal</span></td>
+                <td>2020</span></td>
+                <td>Material Science</span></td>
+              </tr>
+              <tr>
                 <td>Utsav Racca</span></td>
                 <td>2021</span></td>
                 <td>Civil</span></td>
-              </tr>
-              <tr>
-                <td>Aishwarya Malve</span></td>
-                <td>2022</span></td>
-                <td>Civil</span></td>
-              </tr>
-              <tr>
-                <td>Krishna</span></td>
-                <td>2022</span></td>
-                <td>Bioengineering</span></td>
               </tr>
               <tr>
                 <td>Vaibhav Saini</span></td>
@@ -580,24 +610,24 @@
                 <td>Mechanical</span></td>
               </tr>
               <tr>
+                <td>Varun Aggarwal</span></td>
+                <td>2018</span></td>
+                <td>Electrical</span></td>
+              </tr>
+              <tr>
+                <td>Vasudev Gohil</span></td>
+                <td>2018</span></td>
+                <td>Electrical</span></td>
+              </tr>
+              <tr>
                 <td>Viraj Shah</span></td>
                 <td>2022</span></td>
                 <td>Mechanical</span></td>
               </tr>
               <tr>
-                <td>Anukesh K A</span></td>
-                <td>2022</span></td>
-                <td>Earth Science</span></td>
-              </tr>
-              <tr>
-                <td>Dewanshi</span></td>
-                <td>2022</span></td>
-                <td>Physics</span></td>
-              </tr>
-              <tr>
-                <td>Snehal Gohad</span></td>
-                <td>2023</span></td>
-                <td>Civil</span></td>
+                <td>Zainab Patel</span></td>
+                <td>2018</span></td>
+                <td>Material Science</span></td>
               </tr>
             </tbody>
           </table>
@@ -610,10 +640,10 @@
 
 
   <!-- prev oragniser -->
-  <div class=" bgcolor hero bg-base-300 lg:py-16 mb-4 w-full">
+  <div class="hero bgcolor bg-base-300 lg:py-16 w-full">
     <div class="flex-col hero-content">
       <h1 class="mb-0 lg:mb-8  text-3xl text-center lg:text-5xl font-bold " style="margin-top: 20px;">
-        Previous Organizing Members
+        Previous Organizing Member
       </h1>
       <div class="scrollBag bg-base-100">
         <div class="card shadow-xl rounded-xl overflow-x-auto ">
@@ -625,72 +655,66 @@
                 <th>Class</th>
                 <th>Department</th>
               </tr>
-              <tbody>
-                <tr>
-                  <td>Prasanth P Nair</span></td>
-                  <td>____</span></td>
-                  <td>Mechanical</span></td>
-                </tr>
-                <tr>
-                  <td class="tg-26kj"><span style="font-weight:inherit;font-style:inherit">Ankita Yadav</span></td>
-                  <td class="tg-26kj"><span style="font-weight:inherit;font-style:inherit">____</span></td>
-                  <td>____</span></td>
-                </tr>
-                <tr>
-                  <td>Chris Francis</span></td>
-                  <td>2022</span></td>
-                  <td>Computer Science</span></td>
-                </tr>
-                <tr>
-                  <td>Krishna Thakkar</span></td>
-                  <td>__</span></td>
-                  <td>__</span></td>
-                </tr>
-                <tr>
-                  <td>Tanurima Shau</span></td>
-                  <td>__</span></td>
-                  <td>___ </span></td>
-                </tr>
-                <tr>
-                  <td>Aditi Satish</span></td>
-                  <td>__</span></td>
-                  <td>___ </span></td>
-                </tr>
-                
-                <tr>
-                  <td>Narsiram Gurjar</span></td>
-                  <td>__</span></td>
-                  <td>___ </span></td>
-                </tr>
-                <tr>
-                  <td>Rajdepp Singh</span></td>
-                  <td>__</span></td>
-                  <td>___ </span></td>
-                </tr>
-                <tr>
-                  <td>Shashwat Srivastava</span></td>
-                  <td>__</span></td>
-                  <td>___ </span></td>
-                </tr>
-                <tr>
-                  <td>Siddhi Surawar</span></td>
-                  <td>__</span></td>
-                  <td>___ </span></td>
-                </tr>
-                <tr>
-                  <td>Shashwat Srivastava</span></td>
-                  <td>__</span></td>
-                  <td>___ </span></td>
-                </tr>
-              </tbody>
-            </thead> 
-            
+            </thead>
+            <tbody>
+              <tr>
+                <td>Aditi Satish</span></td>
+                <td>-</span></td>
+                <td>-</span></td>
+              </tr>
+              <tr>
+                <td class="tg-26kj"><span style="font-weight:inherit;font-style:inherit">Ankita Yadav</span></td>
+                <td class="tg-26kj"><span style="font-weight:inherit;font-style:inherit">-</span></td>
+                <td>Msc</span></td>
+              </tr>
+              <tr>
+                <td>Chris Francis</span></td>
+                <td>2022</span></td>
+                <td>Computer Science</span></td>
+              </tr>
+              <tr>
+                <td>Krishna Thakkar</span></td>
+                <td>-</span></td>
+                <td>-</span></td>
+              </tr>
+              <tr>
+                <td>Narsiram Gurjar</span></td>
+                <td></span></td>
+                <td>Civil Engineering</span></td>
+              </tr>
+              <tr>
+                <td>Prasanth P Nair</span></td>
+                <td>-</span></td>
+                <td>Mechanical Engineering</span></td>
+              </tr>
+              <tr>
+                <td>Rajdeep Singh</span></td>
+                <td>-</span></td>
+                <td>Mechanical Engineering</span></td>
+              </tr>    
+              <tr>
+                <td>Shashwat Srivastava</span></td>
+                <td>-</span></td>
+                <td>Chemical Engineering</span></td>
+              </tr>
+              <tr>
+                <td>Siddhi Surawar</span></td>
+                <td>2023</span></td>
+                <td>Material Engineering</span></td>
+              </tr>
+              <tr>
+                <td>Tanurima Shau</span></td>
+                <td>-</span></td>
+                <td>-</span></td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
 
     </div>
   </div>
+  
   
 
 
